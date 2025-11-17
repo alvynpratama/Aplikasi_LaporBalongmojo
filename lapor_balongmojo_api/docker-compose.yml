@@ -1,0 +1,33 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: lapor_balongmojo_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: 'password'
+      MYSQL_DATABASE: 'lapor_balongmojo'
+    ports:
+      - '3306:3306' 
+    volumes:
+      - db_data:/var/lib/mysql
+
+  api:
+    container_name: lapor_balongmojo_api
+    build: . 
+    restart: unless-stopped
+    ports:
+      - '3000:3000' 
+    depends_on:
+      - db 
+    environment:
+      DB_HOST: 'db' 
+      DB_USER: 'root'
+      DB_PASSWORD: 'password'
+      DB_NAME: 'lapor_balongmojo'
+      JWT_SECRET: 'password'
+    volumes:
+      - uploads_data:/usr/src/app/public/uploads
+      
+volumes:
+  db_data:
+  uploads_data:

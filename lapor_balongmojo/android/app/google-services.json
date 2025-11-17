@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "345547367084",
+    "project_id": "lapor-balongmojo",
+    "storage_bucket": "lapor-balongmojo.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345547367084:android:706f26a58b802feff9f509",
+        "android_client_info": {
+          "package_name": "com.example.lapor_balongmojo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8VEDdrX96ayym8v4meIdqrUp87W8UISc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

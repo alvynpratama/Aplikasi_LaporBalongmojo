@@ -1,0 +1,8 @@
+.env
+serviceAccountKey.json
+node_modules/
+npm-debug.log
+*.log
+.DS_Store
+public/uploads/*
+!public/uploads/.gitkeep
